@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body {
+        background: rgb(0, 0, 0);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 1) 21%, rgba(64, 64, 64, 1) 40%, rgba(75, 75, 75, 1) 59%, rgba(0, 0, 0, 1) 84%);
+    }
+
+
+
+    input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+    .container2 {
+        border-radius: 5px;
+
+    }
+
+    .container3 {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
+    .bottom-left {
+        position: absolute;
+        top: 100%;
+        left: 15%;
+        transform: translatse(-50%, -50%);
+    }
+
+    div.fontTitle {
+
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        text-transform: capitalize;
+        font-size: 80px;
+        text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18, -12px 2px 2px rgba(255, 0, 0, 0);
+    }
+
+    div.text {
+        color: white;
+        text-align: center;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        text-transform: capitalize;
+        font-size: 17px;
+        color: black;
+        text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18, -12px 2px 2px rgba(255, 0, 0, 0);
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: black;
+        position: fixed;
+        width: 100%;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: gray;
+    }
+
+    li a:hover {
+        background-color: #111;
+    }
+
+    img.imgA1 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 10%;
+        min-width: 250px;
+        min-height: 900px;
+    }
+
+    .header {
+        text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9), -40px -40px 7px rgba(206, 0, 0, 0);
+        font-family: "Comic Sans MS", cursive, sans-serif;
+    }
+</style>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.png">
+    <title>emoji-picker Demo</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+        integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Begin emoji-picker Stylesheets -->
+    <link href="../lib/css/emoji.css" rel="stylesheet">
+    <!-- End emoji-picker Stylesheets -->
+</head>
+
+<body>
+    <header>
+        <div id="menu" style="z-index: 5;">
+            <ul>
+
+                <li><img src=logo.jpg width=200x height=85px /> </li>
+                <li><a href="#about">
+                        <div class="header">About Me</div>
+                    </a></li>
+                <li><a href="#photos">
+                        <div class="header">My Photos</div>
+                    </a></li>
+                <li><a href="#playlist">
+                        <div class="header">My Playlist</div>
+                    </a></li>
+                <li><a href="#like">
+                        <div class="header">Like</div>
+                    </a></li>
+                <li><a href="#qrcoder">
+                        <div class="header">QR code</div>
+                    </a></li>
+                <li><a href="#spa">
+                        <div class="header">Q&A</div>
+                    </a></li>
+                <li><a href="#contact">
+                        <div class="header">Contact Me</div>
+                    </a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+
+
+        <img class="imgA1" src=mainBackGround.jpg style="z-index: -1">
+        <div class="container3">
+            <div class="bottom-left" style="z-index: -1">
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <div class="fontTitle">
+                    Pudge
+                </div>
+                <div class="text" style="  top: 1%;">
+                    <br /> Although he is often asked, Pudge refuses to answer any questions about his family, and
+                    gets quite irate at curious strangers. <br />
+                    In his youth, he served in the employ of King Brandalon as his royal butcher. <br />
+                    This was the beginning of Pudge's career, which he considered the best years of his life. <br />
+                    The King's reign was particularly bloody, and Pudge is one of the few who are still alive to
+                    remember the carnage. <br />
+                    At some point, he also spent some time on a farm. <br />
+                    Seeking meat, Pudge journeyed to the Fields of Endless Carnage, where he loomed over the dead,
+                    cutting up and devouring their flesh. <br />
+                    For reasons unknown, he left the Fields before the Rumusque Clerics made a pilgrimage there to
+                    purge the land.
+                </div>
+            </div>
+        </div>
+    </section>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    </section>
+
+    <section id="photos" class="section">
+        <br />
+        <div class="fontTitle" style="  text-align: center;">My Photos with different skins </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <img src="skin1.png" alt="Paris" style="width:25%">
+        <img src="skin2.jpg" alt="Paris" style="width:25%">
+        <img src="skin3.jpg" alt="Paris" style="width:25%">
+        <img src="skin4.png" alt="Paris" style="width:24%">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+    </section>
+
+    <section id="playlist" class="section">
+        <div class="fontTitle" style="  text-align: center;">My Song</div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br /><iframe width="560" height="315" style="display:block; margin: 0 auto;"
+            src="https://www.youtube.com/embed/rPF25A-XnHE" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    </section>
+
+    <section id="like" class="section">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="fontTitle" style="  text-align: center;">Like me </div>
+        <div id="fb-root">
+            <br />
+            <br />
+            <br />
+            <div style="text-align:center;">
+                <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width=""
+                    data-layout="box_count" data-action="like" data-size="large" data-share="true"></div>
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    </section>
+
+    <section id="qrcoder" class="section">
+        <br />
+        <div class="fontTitle" style="text-align: center;">scan my code</div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+    </section>
+
+    <section id="spa" class="section">
+        <div class="fontTitle" style="text-align: center;"><br /> Q&A</div>
+        <div class="text" style="text-align:right;">
+
+            <p>
+                <br />
+                <b><em>שאלה 1</em></b>
+                <br />
+                <br />
+                <b>סוג תוכן</b>
+                <br />
+                <br />
+                web 1.0 : אין כמעט אינטרקציה בין המשתמשים , כל המידע הוא לקריאה בלבד אי אפשר לתקשר עם האתר
+                <br />
+                web 2.0 : ישנה אינטרקציה בין מששתמשים התוכן הוא מסוג קריאה -כתיבה , משתמשים יכולים לדבר אחד עם השני
+                ולשתף
+                תוכן.
+                <br />
+                web 3.0 : כמו הגירסה הקודמת אבל המידע הוא מסוג קריאה כתיבה חכם , הוואב עצמו משתמש בבינה מלכאותית ומסווג
+                מידע
+                בעל תוכן סמנטי משותף
+                <br />
+                <br />
+                <b>מיקוד</b>
+                <br />
+                <br />
+                web 1.0 : מתקד בחברות שרוצות לפרסם את עצמם באינטרנט
+                <br />
+                web 2.0 : מתקד בקהילה
+                <br />
+                web 3.0 : מתמתקד בפרסונלזציה הוואב מותאם אישית לכל אחד
+                <br />
+                <br />
+                <b> כמות המשתמשים</b>
+                <br />
+                <br />
+                web 1.0 : מליון משתמשים
+                <br />
+                web 2.0 : בליון משתמשים
+                <br />
+                web 3.0 : טרליון משתמשים
+                <br />
+                <br />
+                <br />
+            </p>
+            <p>
+                <b><em>שאלה 2</em></b>
+                <br />
+                <br />
+                <b> דוגמא להבדלים ע"י תרחיש שימוש </b>
+                <br />
+                <br />
+                web 1.0 : על המשתמש לדעת כתובת אינטרנט של אתר מסוים אשר מדבר על נושא החיפוש שלו לדוגמא עבור השאילתא
+                -מחשב של אפל- על המשתמש לדעת כתובת של אתר אשר מדבר על הנושא הזה ודרכו להכינס לאתר הרלוונטי
+                <br />
+                web 2.0 : המשתמש יכל להשתמש במנוע חיפוש ולהזמין שאילתא מסוימות המנוע חיפוש יחזיר לינקים של אתרים אשר כל
+                המילים או חלקים מופעים בתגיות של האתרים לדוגמא עבור השאילתא -מחשב אפל- השאילתא תאחזר גם אתרים שמדברים רק
+                על תפוחים והתוצאות הללו לא יהיו רלוונטיות
+                web 3.0 : המתשתמש ישתמש במנוע החיפוש והמנוע יאחזר כבר אתרים בעלי סמנטיות קרובה לשאילתא ולא רק אם המילה
+                הופיע במסמך או לא
+            </p>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="fontTitle" style="text-align: center;">Contact me</div>
+        <br />
+        <div class="container2" style="text-align: center; color: white;
+        text-align: center;
+        font-family:  Comic Sans MS" , cursive, sans-serif; font-size: 25px; text-transform: capitalize;>
+            <form action="mailto:maximbr@post.bgu.ac.il" method="post" enctype="text/plain">
+                <label for="email">Email:</label>
+                <br />
+                <input id="email" placeholder="Email" required algin="center">
+                <br />
+                <label for="subject">Subject:</label>
+                <br />
+                <input type="text" id="subject" name="Subject" placeholder="Title" required>
+                <br />
+                <label for="msg">Email:</label>
+                <br />
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-10">
+                            <div class="text-left">
+                                <p class="lead emoji-picker-container">
+                                    <input class="form-control" type="text" id="msg" rows="10" cols="50" name="Message:"
+                                        data-emojiable="true" required>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <input type="submit" value="Submit">
+                <br />
+                <br />
+            </form>
+            <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+            <!-- Begin emoji-picker JavaScript -->
+            <script src="../lib/js/config.js"></script>
+            <script src="../lib/js/util.js"></script>
+            <script src="../lib/js/jquery.emojiarea.js"></script>
+            <script src="../lib/js/emoji-picker.js"></script>
+            <!-- End emoji-picker JavaScript -->
+
+            <script>
+                $(function () {
+                    // Initializes and creates emoji set from sprite sheet
+                    window.emojiPicker = new EmojiPicker({
+                        emojiable_selector: '[data-emojiable=true]',
+                        assetsPath: '../lib/img/',
+                        popupButtonClasses: 'fa fa-smile-o'
+                    });
+                    // Finds all elements with `emojiable_selector` and converts them to rich emoji input fields
+                    // You may want to delay this step if you have dynamically created input fields that appear later in the loading process
+                    // It can be called as many times as necessary; previously converted input fields will not be converted again
+                    window.emojiPicker.discover();
+                });
+            </script>
+        </div>
+    </section>
+
+
+    <script type="text/javascript">
+        $(function () {
+            $("#nav a").click(function (e) {
+                e.preventDefault();
+                $('html,body').scrollTo(this.hash, this.hash);
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).scroll(function () {
+            $('#menu').toggle($(this).scrollTop() > 1000)
+        });​
+    </script>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
+    </script>
+
+
+</body>
+
+</html>
